@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/sv02")
 public class IndexController {
     @Autowired
     private RestTemplate restTemplate;
@@ -18,21 +18,15 @@ public class IndexController {
     @Autowired
     private Environment env;
 
-    @GetMapping("/service02")
-    public ResponseEntity<String> home() {
-        String res = restTemplate.getForObject("http://service01/service01", String.class);
-        return ResponseEntity.ok(res);
-    }
-
     @GetMapping("/hello")
     public ResponseEntity<String> hello() {
-        String res = restTemplate.getForObject("http://service01/service01/hello", String.class);
+        String res = restTemplate.getForObject("http://service01/sv01/hello", String.class);
         return ResponseEntity.ok(res);
     }
 
-    @GetMapping("/")
+    @GetMapping("")
     public ResponseEntity<String> index() {
-        String res = "OK";
+        String res = "OK Service 02";
         return ResponseEntity.ok(res);
     }
 }
