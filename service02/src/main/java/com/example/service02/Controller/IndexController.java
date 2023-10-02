@@ -23,7 +23,6 @@ public class IndexController {
         String res = restTemplate.getForObject("http://service01/sv01/hello", String.class);
         return ResponseEntity.ok(res);
     }
-    //Đũy Phong bớt bán cơm chó lại nha mày
 
     @GetMapping("")
     public ResponseEntity<String> index() {
