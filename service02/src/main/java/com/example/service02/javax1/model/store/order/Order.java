@@ -42,6 +42,10 @@ public class Order {
     @JoinColumn (name = "storeID", referencedColumnName = "storeID")
     private Store storeID;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "userName", referencedColumnName = "userName")
+    private User user;
+
     @OneToOne (cascade = CascadeType.ALL)
     @JoinColumn (name = "userAddress", referencedColumnName = "userAddress")
     private Address userAddress;
@@ -82,4 +86,6 @@ public class Order {
                 + ", userPhoneNumber = " + userPhoneNumber + ", status = " + orderStatus + ", orderSummaryCost = " + orderSumCost + ", shippingStatus = " + shippingStatus
                 + "]";
     }
+
+
 }

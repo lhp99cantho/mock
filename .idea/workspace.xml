@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ef572f1-ddd4-4d3b-9062-28c6f14e8d6d" name="Changes" comment="Chỉnh sửa workspace">
-      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/connection/DBConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/guest/Guest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/Store.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/order/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/UserFollow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax2/shipper/Shipper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/Category.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/Controller/IndexController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/Service02Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/Service02Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/order/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/UserFollow.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/UserFollow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax2/shipper/Shipper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax2/shipper/Shipper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +171,7 @@
       <workItem from="1696419399992" duration="8009000" />
       <workItem from="1696471179701" duration="3601000" />
       <workItem from="1696574205507" duration="6081000" />
-      <workItem from="1696592149633" duration="6503000" />
+      <workItem from="1696592149633" duration="8090000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.">
       <option name="closed" value="true" />
@@ -272,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696337080654</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Chỉnh sửa workspace">
+      <option name="closed" value="true" />
+      <created>1696598832948</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1696598832948</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,6 +318,7 @@
     <MESSAGE value="Thêm comment" />
     <MESSAGE value="Xóa comment" />
     <MESSAGE value="Thêm thư viện" />
-    <option name="LAST_COMMIT_MESSAGE" value="Thêm thư viện" />
+    <MESSAGE value="Chỉnh sửa workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chỉnh sửa workspace" />
   </component>
 </project>

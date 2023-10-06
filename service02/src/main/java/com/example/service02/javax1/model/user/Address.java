@@ -25,10 +25,8 @@ public class Address {
     @NotBlank
     @MemoryAddress
     @Column(name = "userAddress")
-    private String userAddress;
-
     @OneToOne (mappedBy = "userAddress")
-    private Address address;
+    private Address userAddress;
 
     @CreationTimestamp
     @NotBlank

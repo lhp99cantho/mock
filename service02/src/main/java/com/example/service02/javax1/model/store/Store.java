@@ -32,7 +32,8 @@ public class Store {
     @NotEmpty (message = "Store name is required!")
     @NotBlank
     @Column (name = "storeName")
-    private String storeName;
+    @OneToOne(mappedBy = "storeName")
+    private Store storeName;
 
     @NotEmpty (message = "Owner ID is required!")
     @NotBlank
@@ -93,7 +94,7 @@ public class Store {
     @Column (name = "storeSumCost")
     private int storeSumCost;
 
-    public Store(int storeID, String storeName, int ownerID, Boolean active, Boolean open, String avatar, int point,
+    public Store(int storeID, Store storeName, int ownerID, Boolean active, Boolean open, String avatar, int point,
                  double rating, String createAt, String updateAt, String ownerName, int storeSumCost) {
         super();
         this.storeID = storeID;
@@ -117,7 +118,7 @@ public class Store {
                 + ", createAt=" + storeCreateAt + ", updateAt=" + storeUpdateAt + "]";
     }
 
-    public Store (int storeID, String storeName, int ownerID, String ownerName, int sumCost) {
+    public Store (int storeID, Store storeName, int ownerID, String ownerName, int sumCost) {
         super();
         this.storeID = storeID;
         this.storeName = storeName;
@@ -126,7 +127,7 @@ public class Store {
         this.storeSumCost = sumCost;
     }
 
-    public Store (int storeID, String storeName, Boolean open, String avatar, String updateAt) {
+    public Store (int storeID, Store storeName, Boolean open, String avatar, String updateAt) {
 
         this.storeID = storeID;
         this.storeName = storeName;

@@ -17,10 +17,8 @@ public class Shipper {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "shipperID", unique = true, length = 10)
-    private int shipperID;
-
     @OneToOne (mappedBy = "shipperID")
-    private Shipper shipper;
+    private Shipper shipperID;
 
 
 }

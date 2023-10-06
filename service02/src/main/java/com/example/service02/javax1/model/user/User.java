@@ -1,18 +1,12 @@
 package com.example.service02.javax1.model.user;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotEmpty;
-import jdk.jfr.MemoryAddress;
+import jakarta.validation.constraints.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
-import org.springframework.data.annotation.CreatedDate;
 import org.springframework.format.annotation.NumberFormat;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
 
 @Getter
 @Setter
@@ -25,15 +19,15 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "userID", unique = true, length = 10)
-    private int userID;
-
     @OneToOne (mappedBy = "userID")
-    private User user;
+    private User userID;
 
+    @Id
     @NotEmpty(message = "Name is required!")
     @NotBlank
     @Column(name = "userName")
-    private String userName;
+    @OneToOne (mappedBy = "userName")
+    private User userName;
 
     @NotEmpty(message = "Email is required!")
     @NotBlank
