@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ef572f1-ddd4-4d3b-9062-28c6f14e8d6d" name="Changes" comment="First commit">
+    <list default="true" id="1ef572f1-ddd4-4d3b-9062-28c6f14e8d6d" name="Changes" comment="Thêm thư viện">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/com/example/gatewayservice/config/AuthenticationFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/com/example/gatewayservice/config/GatewayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/example/gatewayservice/config/GatewayConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/com/example/gatewayservice/config/JwtUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/com/example/gatewayservice/config/RouterValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/target/classes/com/example/gatewayservice/config/GatewayConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/target/classes/com/example/gatewayservice/config/GatewayConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/target/classes/com/example/gatewayservice/config/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/target/classes/com/example/gatewayservice/config/JwtUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/target/classes/com/example/gatewayservice/config/RouterValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/target/classes/com/example/gatewayservice/config/RouterValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/target/classes/com/example/service01/Controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service01/target/classes/com/example/service01/Controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/Controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/Controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/classes/com/example/service02/Controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service02/target/classes/com/example/service02/Controller/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service02/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/Controller/IndexController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/Service02Application.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,11 +20,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="user" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
@@ -54,7 +52,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -67,29 +65,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/Desktop/microservices-project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;bd2b7400a52da4229897c54109e7be3c&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "demo01",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/DATA/FJB06-FPT/FJB06-FPT/SHARECODE/Web bán trái cây",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "show.migrate.to.gradle.popup": "false",
+    "spring.configuration.checksum": "bd2b7400a52da4229897c54109e7be3c",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.service02.Repository" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -157,6 +165,9 @@
       <workItem from="1695287190760" duration="232000" />
       <workItem from="1695883322572" duration="1771000" />
       <workItem from="1695901226382" duration="3603000" />
+      <workItem from="1696247288579" duration="13595000" />
+      <workItem from="1696419399992" duration="8009000" />
+      <workItem from="1696471179701" duration="3601000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.">
       <option name="closed" value="true" />
@@ -230,7 +241,31 @@
       <option name="project" value="LOCAL" />
       <updated>1695883543007</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Thêm comment">
+      <option name="closed" value="true" />
+      <created>1696250877143</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1696250877143</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Xóa comment">
+      <option name="closed" value="true" />
+      <created>1696253616333</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1696253616333</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Thêm thư viện">
+      <option name="closed" value="true" />
+      <created>1696337080654</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1696337080654</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +303,9 @@
     <MESSAGE value="Commit gateway-service" />
     <MESSAGE value="Commit service-01" />
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Thêm comment" />
+    <MESSAGE value="Xóa comment" />
+    <MESSAGE value="Thêm thư viện" />
+    <option name="LAST_COMMIT_MESSAGE" value="Thêm thư viện" />
   </component>
 </project>
