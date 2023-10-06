@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ef572f1-ddd4-4d3b-9062-28c6f14e8d6d" name="Changes" comment="Thêm thư viện">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1ef572f1-ddd4-4d3b-9062-28c6f14e8d6d" name="Changes" comment="Chỉnh sửa workspace">
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/connection/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/guest/Guest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/Store.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/order/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/UserFollow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax2/shipper/Shipper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service02/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/Controller/IndexController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/Service02Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/Service02Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/Service02Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +83,7 @@
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "demo01",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/DATA/FJB06-FPT/FJB06-FPT/SHARECODE/Web bán trái cây",
+    "last_opened_file_path": "C:/DATA/FJB06-FPT/FJB06-FPT/JWD/PRACTICES/Airport Management",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -105,7 +110,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayServiceApplication">
+  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
     <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="eureka-server" />
@@ -168,6 +173,8 @@
       <workItem from="1696247288579" duration="13595000" />
       <workItem from="1696419399992" duration="8009000" />
       <workItem from="1696471179701" duration="3601000" />
+      <workItem from="1696574205507" duration="6081000" />
+      <workItem from="1696592149633" duration="6503000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.">
       <option name="closed" value="true" />
