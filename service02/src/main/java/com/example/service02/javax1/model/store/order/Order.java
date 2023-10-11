@@ -17,6 +17,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.NumberFormat;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Getter
@@ -25,12 +26,13 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Entity
 @Table (name = "order")
-public class Order {
+public class Order implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "orderID", unique = true, length = 6)
-    private int orderID;
+    @OneToOne (mappedBy = "orderID")
+    private Order orderID;
 
     @Id
     @OneToOne(cascade = CascadeType.ALL)

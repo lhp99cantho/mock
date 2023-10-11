@@ -6,6 +6,7 @@ import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.format.annotation.NumberFormat;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Getter
@@ -14,7 +15,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Entity
 @Table (name = "user")
-public class User {
+public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -56,13 +57,9 @@ public class User {
     @Column(name = "userAvatar")
     private String userAvatar;
 
-    @NotEmpty
-    @NotBlank
     @Column(name = "userPoint")
-    private float userPoint;
+    private int userPoint;
 
-    @NotEmpty
-    @NotBlank
     @Column(name = "userRole")
     private int userRole;
 
@@ -70,6 +67,10 @@ public class User {
     @NotBlank
     @Column (name = "userDateCreate")
     private LocalDateTime userDateCreate;
+
+    public User(String userEmail, String userPassword) {
+
+    }
 
     public String toString() {
         return "UserModels [userID=" + userID + ", name=" + userName + ", email=" + userEmail + ", phone="

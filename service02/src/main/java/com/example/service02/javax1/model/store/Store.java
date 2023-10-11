@@ -1,16 +1,11 @@
 package com.example.service02.javax1.model.store;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.PastOrPresent;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.validation.constraints.*;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Getter
@@ -19,82 +14,80 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Entity
 @Table (name = "store")
-public class Store {
+public class Store implements Serializable {
 
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
     @Column (name = "storeID", unique = true, length = 16)
-    private int storeID;
-
     @OneToOne (mappedBy = "storeID")
-    private Store store;
+    protected Store storeID;
 
     @NotEmpty (message = "Store name is required!")
     @NotBlank
     @Column (name = "storeName")
-    @OneToOne(mappedBy = "storeName")
-    private Store storeName;
+    @OneToOne (mappedBy = "storeName")
+    protected Store storeName;
 
     @NotEmpty (message = "Owner ID is required!")
     @NotBlank
     @Column (name = "ownerID")
-    private int ownerID;
+    protected int ownerID;
 
     @NotNull
     @NotBlank
     @Column (name = "storeActive")
-    private Boolean storeActive;
+    protected Boolean storeActive;
 
     @NotNull
     @NotBlank
     @Column (name = "storeOpen")
-    private Boolean storeOpen;
+    protected Boolean storeOpen;
 
     @NotNull
     @NotBlank
     @Column (name = "storeAvatar")
-    private String storeAvatar;
+    protected String storeAvatar;
 
     @NotNull (message = "Store email contact is required!")
     @NotBlank
     @Column (name = "storeEmailContact", unique = true)
-    private String storeEmailContact;
+    protected String storeEmailContact;
 
     @NotNull (message = "Store point is required!")
     @NotBlank
     @Column (name = "storePoint")
-    private int storePoint;
+    protected int storePoint;
 
     @NotNull
     @NotBlank
     @Column (name = "storeRating")
-    private double storeRating;
+    protected double storeRating;
 
     @NotNull
     @NotBlank
     @PastOrPresent
     @CreationTimestamp
     @Column (name = "storeCreateAt")
-    private LocalDateTime storeCreateAt;
+    protected LocalDateTime storeCreateAt;
 
     @NotNull
     @NotBlank
     @PastOrPresent
     @CreationTimestamp
     @Column (name = "storeUpdateAt")
-    private LocalDateTime storeUpdateAt;
+    protected LocalDateTime storeUpdateAt;
 
     @NotEmpty (message = "Owner Name is required!")
     @NotBlank
     @Column (name = "ownerName")
-    private String ownerName;
+    protected String ownerName;
 
     @NotEmpty
     @NotBlank
     @Column (name = "storeSumCost")
-    private int storeSumCost;
+    protected int storeSumCost;
 
-    public Store(int storeID, Store storeName, int ownerID, Boolean active, Boolean open, String avatar, int point,
+    public Store(Store storeID, Store storeName, int ownerID, Boolean active, Boolean open, String avatar, int point,
                  double rating, String createAt, String updateAt, String ownerName, int storeSumCost) {
         super();
         this.storeID = storeID;
@@ -118,7 +111,7 @@ public class Store {
                 + ", createAt=" + storeCreateAt + ", updateAt=" + storeUpdateAt + "]";
     }
 
-    public Store (int storeID, Store storeName, int ownerID, String ownerName, int sumCost) {
+    public Store (Store storeID, Store storeName, int ownerID, String ownerName, int sumCost) {
         super();
         this.storeID = storeID;
         this.storeName = storeName;
@@ -127,7 +120,7 @@ public class Store {
         this.storeSumCost = sumCost;
     }
 
-    public Store (int storeID, Store storeName, Boolean open, String avatar, String updateAt) {
+    public Store (Store storeID, Store storeName, Boolean open, String avatar, String updateAt) {
 
         this.storeID = storeID;
         this.storeName = storeName;

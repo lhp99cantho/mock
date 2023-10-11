@@ -6,6 +6,7 @@ import jakarta.validation.constraints.NotEmpty;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Getter
@@ -14,12 +15,13 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Entity
 @Table (name = "category")
-public class Category {
+public class Category implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column (name = "categoryID", unique = true, length = 9)
-    private int categoryID;
+    @OneToOne (mappedBy = "categoryID")
+    private Category categoryID;
 
     @NotEmpty(message = "Category Name is required!")
     @NotBlank
@@ -46,7 +48,7 @@ public class Category {
     @Column(name = "isDel")
     private boolean isDel;
 
-    public Category (int categoryID, String categoryName, String categoryImages) {
+    public Category (Category categoryID, String categoryName, String categoryImages) {
         this.categoryID = categoryID;
         this.categoryName = categoryName;
         this.categoryImages = categoryImages;

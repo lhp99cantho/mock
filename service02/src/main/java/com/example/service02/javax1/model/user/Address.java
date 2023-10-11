@@ -6,6 +6,7 @@ import jdk.jfr.MemoryAddress;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Getter
@@ -14,7 +15,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Entity
 @Table (name = "address")
-public class Address {
+public class Address implements Serializable {
 
     @Id
     @OneToOne(cascade = CascadeType.ALL)
