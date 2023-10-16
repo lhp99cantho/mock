@@ -6,6 +6,7 @@ import jakarta.validation.constraints.NotEmpty;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
@@ -16,6 +17,9 @@ import java.time.LocalDateTime;
 @Entity
 @Table (name = "category")
 public class Category implements Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -35,13 +39,13 @@ public class Category implements Serializable {
 
     @NotEmpty(message = "Category Create Date is required!")
     @NotBlank
-    @CreationTimestamp
+    @Temporal(TemporalType.DATE)
     @Column(name = "categoryCreateDate")
     private LocalDateTime categoryCreateDate;
 
     @NotEmpty(message = "Category Update Date is required!")
     @NotBlank
-    @CreationTimestamp
+    @Temporal(TemporalType.DATE)
     @Column(name = "categoryUpdateDate")
     private LocalDateTime categoryUpdateDate;
 

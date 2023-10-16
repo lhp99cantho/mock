@@ -29,7 +29,7 @@ public class Address implements Serializable {
     @OneToOne (mappedBy = "userAddress")
     private Address userAddress;
 
-    @CreationTimestamp
+    @Temporal(TemporalType.DATE)
     @NotBlank
     @Column (name = "userDateUpdate")
     private LocalDateTime userDateUpdate;

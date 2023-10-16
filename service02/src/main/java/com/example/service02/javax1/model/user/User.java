@@ -63,7 +63,7 @@ public class User implements Serializable {
     @Column(name = "userRole")
     private int userRole;
 
-    @CreationTimestamp
+    @Temporal(TemporalType.DATE)
     @NotBlank
     @Column (name = "userDateCreate")
     private LocalDateTime userDateCreate;

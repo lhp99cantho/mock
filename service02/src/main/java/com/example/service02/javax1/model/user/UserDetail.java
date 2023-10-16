@@ -12,9 +12,10 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Table (name = "userFollow")
-public class UserFollow {
+@Data
+@Table (name = "UserDetail")
+public class UserDetail {
+
 
     @Id
     @OneToOne (cascade = CascadeType.ALL)
@@ -31,6 +32,8 @@ public class UserFollow {
     @Column (name = "isDeleted")
     private boolean isDeleted;
 
+    @Temporal(TemporalType.DATE)
+    @NotBlank
     @Column (name = "dateUpdate")
     private LocalDateTime dateUpdate;
 

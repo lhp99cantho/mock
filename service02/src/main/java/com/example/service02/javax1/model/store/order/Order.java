@@ -17,6 +17,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.NumberFormat;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
@@ -27,6 +28,9 @@ import java.time.LocalDateTime;
 @Entity
 @Table (name = "order")
 public class Order implements Serializable {
+
+    @Serial
+    public static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -60,7 +64,7 @@ public class Order implements Serializable {
 
     @NotNull
     @DateTimeFormat
-    @CreationTimestamp
+    @Temporal(TemporalType.DATE)
     @Column(name = "orderDateCreate")
     private LocalDateTime orderDateCreate;
 

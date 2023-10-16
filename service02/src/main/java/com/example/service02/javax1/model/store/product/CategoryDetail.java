@@ -2,10 +2,7 @@ package com.example.service02.javax1.model.store.product;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.io.Serializable;
@@ -15,9 +12,9 @@ import java.time.LocalDateTime;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
-@Table (name = "categoryFollow")
-public class CategoryFollow implements Serializable {
+@Data
+@Table (name = "CategoryDetail")
+public class CategoryDetail implements Serializable {
     @Id
     @OneToOne (cascade = CascadeType.ALL)
     @JoinColumn (name = "categoryID", referencedColumnName = "categoryID")
@@ -27,9 +24,9 @@ public class CategoryFollow implements Serializable {
     @JoinColumn (name = "categoryName", referencedColumnName = "categoryName")
     private Category categoryName;
 
-    @Column (name = "categoryIsDelete")
+    @Column (name = "categoryStatus")
     @NotNull
-    private boolean categoryIsDelete;
+    private boolean categoryStatus;
 
     @Column (name = "dateCreate")
     @CreationTimestamp
@@ -42,7 +39,7 @@ public class CategoryFollow implements Serializable {
     private LocalDateTime dateUpdate;
 
     public String toString(){
-        return "CategoryFollow [categoryID " + categoryID + ", categoryName " + categoryName + ", categoryIsDelete " + categoryIsDelete + ", dateCreate " + dateCreate + ", dateUpdate" + dateUpdate + "]";
+        return "CategoryDetail [categoryID " + categoryID + ", categoryName " + categoryName + ", categoryStatus " + categoryStatus + ", dateCreate " + dateCreate + ", dateUpdate" + dateUpdate + "]";
     }
 }
 

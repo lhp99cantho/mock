@@ -4,18 +4,18 @@ import com.example.service02.javax1.model.store.Store;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.*;
-import org.hibernate.annotations.CreationTimestamp;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
-@Table (name = "productFollow")
-public class ProductFollow implements Serializable {
+@Data
+@Table (name = "ProductDetail")
+public class ProductDetail implements Serializable {
 
     @Id
     @OneToOne (cascade = CascadeType.ALL)
@@ -43,7 +43,7 @@ public class ProductFollow implements Serializable {
 
     @OneToOne (cascade = CascadeType.ALL)
     @JoinColumn (name = "categoryID", referencedColumnName = "categoryID")
-    private Category categoryID;
+    protected Category categoryID;
 
     @OneToOne (cascade = CascadeType.ALL)
     @JoinColumn (name = "storeID", referencedColumnName = "storeID")
@@ -54,12 +54,12 @@ public class ProductFollow implements Serializable {
     private float productRating;
 
     @Column (name = "productCreateDate")
-    @CreationTimestamp
+    @Temporal(TemporalType.DATE)
     @NotEmpty (message = "Product Create Date is required!")
     private LocalDateTime productCreateDate;
 
     @Column (name = "productUpdateDate")
-    @CreationTimestamp
+    @Temporal(TemporalType.DATE)
     @NotEmpty (message = "Product Update Date is required!")
     private LocalDateTime productUpdateDate;
 
@@ -68,7 +68,7 @@ public class ProductFollow implements Serializable {
     private String productImg;
 
     public String toString(){
-        return "ProductFollow [productID " + productID + ", productName " + productName + ", productQuantity " + productQuantity + ", productPrice " + productPrice + ", productSold " + productSold + ", productIsActive " + productIsActive + ", productIsSelling " + productIsSelling + ", categoryID " + categoryID + ", storeID " + storeID + ", productRating " + productRating + ", productCreateDate " + productCreateDate + ", productUpdateDate "+ productUpdateDate + ", productImg " + productImg + "]";
+        return "ProductDetail [productID " + productID + ", productName " + productName + ", productQuantity " + productQuantity + ", productPrice " + productPrice + ", productSold " + productSold + ", productIsActive " + productIsActive + ", productIsSelling " + productIsSelling + ", categoryID " + categoryID + ", storeID " + storeID + ", productRating " + productRating + ", productCreateDate " + productCreateDate + ", productUpdateDate "+ productUpdateDate + ", productImg " + productImg + "]";
     }
 
 }

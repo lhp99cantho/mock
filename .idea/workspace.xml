@@ -4,15 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ef572f1-ddd4-4d3b-9062-28c6f14e8d6d" name="Changes" comment="Chỉnh sửa workspace">
-      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/Category.java" afterDir="false" />
+    <list default="true" id="1ef572f1-ddd4-4d3b-9062-28c6f14e8d6d" name="Changes" comment="Merge code cho DB">
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/cart/CartItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/cart/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Favorite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/repository/guest/GuestRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/StoreFollow.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/StoreDetail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/order/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/order/OrderFollow.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/order/OrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/CategoryFollow.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/CategoryDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/ProductFollow.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/ProductDetail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Cart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Comments.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Comments.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/UserFollow.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/UserFollow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax2/shipper/Shipper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax2/shipper/Shipper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/UserFollow.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/UserDetail.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,31 +77,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "demo01",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/DATA/FJB06-FPT/FJB06-FPT/JWD/PRACTICES/Airport Management",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "show.migrate.to.gradle.popup": "false",
-    "spring.configuration.checksum": "bd2b7400a52da4229897c54109e7be3c",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;demo01&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/DATA/FJB06-FPT/FJB06-FPT/JWD/PRACTICES/Airport Management&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;bd2b7400a52da4229897c54109e7be3c&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -171,7 +181,14 @@
       <workItem from="1696419399992" duration="8009000" />
       <workItem from="1696471179701" duration="3601000" />
       <workItem from="1696574205507" duration="6081000" />
-      <workItem from="1696592149633" duration="8090000" />
+      <workItem from="1696592149633" duration="8322000" />
+      <workItem from="1696851133422" duration="8070000" />
+      <workItem from="1697022787165" duration="12051000" />
+      <workItem from="1697105749794" duration="746000" />
+      <workItem from="1697196870389" duration="1115000" />
+      <workItem from="1697200263883" duration="901000" />
+      <workItem from="1697218539868" duration="609000" />
+      <workItem from="1697278195556" duration="8185000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.">
       <option name="closed" value="true" />
@@ -277,7 +294,39 @@
       <option name="project" value="LOCAL" />
       <updated>1696598832948</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Merge code cho DB">
+      <option name="closed" value="true" />
+      <created>1696600458998</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1696600458998</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Merge code cho DB">
+      <option name="closed" value="true" />
+      <created>1697049555543</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1697049555543</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Merge code cho DB">
+      <option name="closed" value="true" />
+      <created>1697049839331</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1697049839331</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Merge code cho DB">
+      <option name="closed" value="true" />
+      <created>1697102376523</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1697102376523</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +368,7 @@
     <MESSAGE value="Xóa comment" />
     <MESSAGE value="Thêm thư viện" />
     <MESSAGE value="Chỉnh sửa workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chỉnh sửa workspace" />
+    <MESSAGE value="Merge code cho DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge code cho DB" />
   </component>
 </project>

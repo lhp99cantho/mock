@@ -4,16 +4,15 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.*;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
+@Data
 @Table (name = "storeFollow")
-public class StoreFollow implements Serializable {
+public class StoreDetail implements Serializable {
 
     @Id
     @OneToOne (cascade = CascadeType.ALL)
@@ -31,6 +30,6 @@ public class StoreFollow implements Serializable {
     protected String storeAvatar;
 
     public String toString () {
-        return "StoreFollow [storeID " + storeID + ", storeName " + storeName + ", storeIsDelete " + storesIsDeleted + ", storeAvatar " + storeAvatar + "]";
+        return "StoreDetail [storeID " + storeID + ", storeName " + storeName + ", storeIsDelete " + storesIsDeleted + ", storeAvatar " + storeAvatar + "]";
     }
 }

@@ -3,11 +3,7 @@ package com.example.service02.javax1.model.store.order;
 import com.example.service02.javax1.model.store.product.Product;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnWarDeployment;
+import lombok.*;
 
 import java.io.Serializable;
 
@@ -15,9 +11,9 @@ import java.io.Serializable;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
+@Data
 @Table (name = "orderFollow")
-public class OrderFollow implements Serializable {
+public class OrderDetail implements Serializable {
     @Id
     @OneToOne (cascade = CascadeType.ALL)
     @JoinColumn (name = "orderID", referencedColumnName = "orderID")
@@ -36,11 +32,15 @@ public class OrderFollow implements Serializable {
     @JoinColumn (name = "productPrice", referencedColumnName = "productPrice")
     private Product productPrice;
 
+    @Column(name = "productQty")
     @NotNull
-    @Column (name = "productCount")
-    private int productCount;
+    private int productQty;
+
+    @NotNull
+    @Column (name = "orderCount")
+    private int orderCount;
 
     public String toString() {
-        return "OrderFollow [orderID " + orderID + ", productID " + productID + ", productName " + productName + ", productPrice " + productPrice + ", productCount " + productCount + "]";
+        return "OrderDetail [orderID " + orderID + ", productID " + productID + ", productName " + productName + ", productPrice " + productPrice + ", orderCount " + orderCount + "]";
     }
 }

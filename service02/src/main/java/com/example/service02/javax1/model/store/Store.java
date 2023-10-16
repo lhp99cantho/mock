@@ -5,6 +5,7 @@ import jakarta.validation.constraints.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
@@ -15,6 +16,9 @@ import java.time.LocalDateTime;
 @Entity
 @Table (name = "store")
 public class Store implements Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
@@ -66,14 +70,14 @@ public class Store implements Serializable {
     @NotNull
     @NotBlank
     @PastOrPresent
-    @CreationTimestamp
+    @Temporal(TemporalType.DATE)
     @Column (name = "storeCreateAt")
     protected LocalDateTime storeCreateAt;
 
     @NotNull
     @NotBlank
     @PastOrPresent
-    @CreationTimestamp
+    @Temporal(TemporalType.DATE)
     @Column (name = "storeUpdateAt")
     protected LocalDateTime storeUpdateAt;
 
