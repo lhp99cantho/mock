@@ -1,0 +1,21 @@
+Index: service02/src/main/java/com/example/service02/javax1/controller/UserController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/service02/src/main/java/com/example/service02/javax1/controller/UserController.java b/service02/src/main/java/com/example/service02/javax1/controller/UserController.java
+new file mode 100644
+--- /dev/null	
++++ b/service02/src/main/java/com/example/service02/javax1/controller/UserController.java	
+@@ -0,0 +1,11 @@
++package com.example.service02.javax1.controller;
++
++import org.springframework.stereotype.Controller;
++import org.springframework.web.bind.annotation.RequestMapping;
++
++@Controller
++@RequestMapping("UTOP")
++public class UserController {
++
++
++}

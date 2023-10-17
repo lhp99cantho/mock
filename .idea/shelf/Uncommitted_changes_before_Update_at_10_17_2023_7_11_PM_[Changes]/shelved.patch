@@ -1,0 +1,42 @@
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1697543677465)
++++ b/.idea/modules.xml	(date 1697543677465)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/service02/service02.iml" filepath="$PROJECT_DIR$/service02/service02.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: service02/service02.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/service02/service02.iml b/service02/service02.iml
+new file mode 100644
+--- /dev/null	(date 1697543677436)
++++ b/service02/service02.iml	(date 1697543677436)
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module version="4">
++  <component name="FacetManager">
++    <facet type="jpa" name="JPA">
++      <configuration>
++        <setting name="validation-enabled" value="true" />
++        <datasource-mapping />
++        <naming-strategy-map />
++      </configuration>
++    </facet>
++  </component>
++</module>
+\ No newline at end of file
