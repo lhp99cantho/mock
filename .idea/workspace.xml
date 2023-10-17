@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ef572f1-ddd4-4d3b-9062-28c6f14e8d6d" name="Changes" comment="Merge code cho DB">
-      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/store/order/OrderDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/store/product/productDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/report/Report1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/report/Report2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/report/Report3.java" afterDir="false" />
+    <list default="true" id="1ef572f1-ddd4-4d3b-9062-28c6f14e8d6d" name="Changes" comment="Merge code cho User">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/service02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/store/category/CategoryDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/user/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/user/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/order/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/report/Report1.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/report/Report1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/report/Report2.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/report/Report2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/report/Report3.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/report/Report3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="user" />
+        <entry key="$PROJECT_DIR$" value="demo01" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,31 +68,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;demo01&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/DATA/FJB06-FPT/FJB06-FPT/JWD/PRACTICES/Airport Management&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;bd2b7400a52da4229897c54109e7be3c&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "demo02",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/DATA/FJB06-FPT/FJB06-FPT/JWD/PRACTICES/Airport Management",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "show.migrate.to.gradle.popup": "false",
+    "spring.configuration.checksum": "bd2b7400a52da4229897c54109e7be3c",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -179,7 +181,8 @@
       <workItem from="1697200263883" duration="901000" />
       <workItem from="1697218539868" duration="609000" />
       <workItem from="1697278195556" duration="13066000" />
-      <workItem from="1697522437264" duration="1954000" />
+      <workItem from="1697522437264" duration="2015000" />
+      <workItem from="1697533943904" duration="2615000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.">
       <option name="closed" value="true" />
@@ -325,7 +328,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697459594987</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Merge code cho User">
+      <option name="closed" value="true" />
+      <created>1697526942670</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1697526942670</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,6 +379,7 @@
     <MESSAGE value="Thêm thư viện" />
     <MESSAGE value="Chỉnh sửa workspace" />
     <MESSAGE value="Merge code cho DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge code cho DB" />
+    <MESSAGE value="Merge code cho User" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge code cho User" />
   </component>
 </project>
