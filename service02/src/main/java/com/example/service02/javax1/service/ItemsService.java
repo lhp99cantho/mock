@@ -10,10 +10,16 @@ import java.util.List;
 @Service
 public interface ItemsService {
     List<Product> getProductItems();
+
     void setProductItems();
+
     void add(Product product);
+
     void remove(int id);
+
     void update(Product product);
+
     Product findById(int productId);
+
     void setProductItems(List<Product> list);
 }

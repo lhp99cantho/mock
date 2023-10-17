@@ -3,7 +3,6 @@ package com.example.service02.javax1.model.user;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.*;
-import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.format.annotation.NumberFormat;
 
 import java.io.Serializable;
@@ -60,6 +59,10 @@ public class User implements Serializable {
     @Column(name = "userPoint")
     private int userPoint;
 
+    @NotEmpty(message = "User Active is required!")
+    @Column(name = "userActive")
+    private boolean userActive;
+
     @Column(name = "userRole")
     private int userRole;
 
@@ -68,7 +71,7 @@ public class User implements Serializable {
     @Column (name = "userDateCreate")
     private LocalDateTime userDateCreate;
 
-    public User(String userEmail, String userPassword) {
+    public User(String userEmail, String userPassword, String fullname, String email, String phonenumber, boolean b, boolean b1, String image) {
 
     }
 

@@ -8,6 +8,8 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity

@@ -11,7 +11,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
-public interface productDAO extends JpaRepository<Product, Long> {
+public interface ProductDAO extends JpaRepository<Product, Long> {
     Page<Product> findAllByProductNameLike (@NotEmpty(message = "Product name is required!") @NotBlank Product productName, Pageable pageable);
 
     @Query ("SELECT max(p.productID) FROM Product p")

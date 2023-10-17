@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 @Getter
@@ -12,8 +13,13 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Table (name = "orderFollow")
+@Entity
+@Table (name = "orderDetail")
 public class OrderDetail implements Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
+
     @Id
     @OneToOne (cascade = CascadeType.ALL)
     @JoinColumn (name = "orderID", referencedColumnName = "orderID")
@@ -40,7 +46,11 @@ public class OrderDetail implements Serializable {
     @Column (name = "orderCount")
     private int orderCount;
 
+    @NotNull
+    @Column (name = "orderStatus")
+    private int orderStatus;
+
     public String toString() {
-        return "OrderDetail [orderID " + orderID + ", productID " + productID + ", productName " + productName + ", productPrice " + productPrice + ", orderCount " + orderCount + "]";
+        return "OrderDetail [orderID " + orderID + ", productID " + productID + ", productName " + productName + ", productPrice " + productPrice + ", orderCount " + orderCount + ", orderStatus " + orderStatus + "]";
     }
 }
