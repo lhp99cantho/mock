@@ -72,7 +72,7 @@ public class Order implements Serializable {
     @NotBlank
     @Max(5)
     @Column(name = "orderStatus")
-    private int orderStatus;
+    private boolean orderStatus;
 
     @OneToOne (cascade = CascadeType.ALL)
     @JoinColumn (name = "shipperID", referencedColumnName = "shiperID")
@@ -82,6 +82,8 @@ public class Order implements Serializable {
     @NotBlank
     @Column(name = "orderSumCost")
     private int orderSumCost;
+
+    private Boolean cancelOrder;
 
     @Column(name = "shippingStatus")
     private int shippingStatus;

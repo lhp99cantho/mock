@@ -5,24 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ef572f1-ddd4-4d3b-9062-28c6f14e8d6d" name="Changes" comment="Merge code cho DB">
-      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/cart/CartItems.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/cart/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Favorite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/repository/guest/GuestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/store/order/OrderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/store/product/productDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/report/Report1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/report/Report2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/report/Report3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/StoreFollow.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/StoreDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/user/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/user/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/order/OrderFollow.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/order/OrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/CategoryFollow.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/CategoryDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/ProductFollow.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/ProductDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Cart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Comments.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Comments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/UserFollow.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/UserDetail.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +178,8 @@
       <workItem from="1697196870389" duration="1115000" />
       <workItem from="1697200263883" duration="901000" />
       <workItem from="1697218539868" duration="609000" />
-      <workItem from="1697278195556" duration="8185000" />
+      <workItem from="1697278195556" duration="13066000" />
+      <workItem from="1697522437264" duration="1954000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.">
       <option name="closed" value="true" />
@@ -326,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697102376523</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Merge code cho DB">
+      <option name="closed" value="true" />
+      <created>1697459594987</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1697459594987</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
