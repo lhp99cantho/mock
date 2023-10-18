@@ -6,19 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1ef572f1-ddd4-4d3b-9062-28c6f14e8d6d" name="Changes" comment="First commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/com/example/gatewayservice/config/AuthenticationFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/com/example/gatewayservice/config/GatewayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/example/gatewayservice/config/GatewayConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/com/example/gatewayservice/config/JwtUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/com/example/gatewayservice/config/RouterValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/target/classes/com/example/gatewayservice/config/GatewayConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/target/classes/com/example/gatewayservice/config/GatewayConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/target/classes/com/example/gatewayservice/config/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/target/classes/com/example/gatewayservice/config/JwtUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/target/classes/com/example/gatewayservice/config/RouterValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/target/classes/com/example/gatewayservice/config/RouterValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/target/classes/com/example/service01/Controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service01/target/classes/com/example/service01/Controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/Controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/Controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/classes/com/example/service02/Controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service02/target/classes/com/example/service02/Controller/IndexController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +20,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
@@ -54,7 +46,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -67,29 +59,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/Desktop/microservices-project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;bd2b7400a52da4229897c54109e7be3c&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "login",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/03. MR. MFC/05. FSOFT/14. MOCK UP/Nhap Java/mock/service01/src/main/java/com/example/service01",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "spring.configuration.checksum": "0631cd187c60936553d658e0adff6c5e",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\03. MR. MFC\05. FSOFT\14. MOCK UP\Nhap Java\mock\service01\src\main\java\com\example\service01" />
+      <recent name="D:\03. MR. MFC\05. FSOFT\14. MOCK UP\Nhap Java\mock\service01\src\main\resources" />
+      <recent name="D:\03. MR. MFC\05. FSOFT\14. MOCK UP\Nhap Java\mock\service01\src\main\java\com\example\service01\model" />
+      <recent name="D:\03. MR. MFC\05. FSOFT\14. MOCK UP\Nhap Java\mock\service01\src\main\java\com\example\service01\model\Entity" />
+      <recent name="D:\03. MR. MFC\05. FSOFT\14. MOCK UP\Nhap Java\mock\service01\src\main\java\com\example\service01\model\entity" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.service01.Controller" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -97,7 +101,18 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayServiceApplication">
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="eureka-server" />
@@ -157,6 +172,23 @@
       <workItem from="1695287190760" duration="232000" />
       <workItem from="1695883322572" duration="1771000" />
       <workItem from="1695901226382" duration="3603000" />
+      <workItem from="1696246536472" duration="926000" />
+      <workItem from="1696409991540" duration="1233000" />
+      <workItem from="1696417360305" duration="110000" />
+      <workItem from="1696417825562" duration="54000" />
+      <workItem from="1697024185829" duration="1415000" />
+      <workItem from="1697027351032" duration="1824000" />
+      <workItem from="1697098351253" duration="131000" />
+      <workItem from="1697165508048" duration="18000" />
+      <workItem from="1697175498618" duration="2000" />
+      <workItem from="1697175738344" duration="94000" />
+      <workItem from="1697426781981" duration="210000" />
+      <workItem from="1697427071816" duration="1351000" />
+      <workItem from="1697455110186" duration="163000" />
+      <workItem from="1697461524550" duration="95000" />
+      <workItem from="1697461765716" duration="2637000" />
+      <workItem from="1697535102132" duration="3581000" />
+      <workItem from="1697616156938" duration="1973000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.">
       <option name="closed" value="true" />
@@ -230,7 +262,23 @@
       <option name="project" value="LOCAL" />
       <updated>1695883543007</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="First commit">
+      <option name="closed" value="true" />
+      <created>1697455201008</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1697455201008</updated>
+    </task>
+    <task id="LOCAL-00011" summary="First commit">
+      <option name="closed" value="true" />
+      <created>1697617804766</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1697617804766</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,8 +312,8 @@
       <path value="$PROJECT_DIR$/service01" />
       <path value="$PROJECT_DIR$/service02" />
     </ignored-roots>
-    <MESSAGE value="First commit." />
     <MESSAGE value="Commit gateway-service" />
+    <MESSAGE value="First commit." />
     <MESSAGE value="Commit service-01" />
     <MESSAGE value="First commit" />
     <option name="LAST_COMMIT_MESSAGE" value="First commit" />
