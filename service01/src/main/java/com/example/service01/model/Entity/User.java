@@ -25,7 +25,7 @@ public class User implements Serializable {
     private String fullname;
 
     @NotEmpty(message = "Username is required!")
-    @Pattern(regexp = "^[a-zA-Z0-9]*$", message = "Username must not contain special characters or spaces!")
+//    @Pattern(regexp = "^[a-zA-Z0-9]*$", message = "Username must not contain special characters or spaces!")
     @Column(name = "username", unique = true)
     private String username;
 
@@ -48,5 +48,9 @@ public class User implements Serializable {
 
     @Column(name="phone")
     private String phone;
+
+    @Column(name = "verification_code", length = 64)
+    private String verificationCode;
+
 
 }
