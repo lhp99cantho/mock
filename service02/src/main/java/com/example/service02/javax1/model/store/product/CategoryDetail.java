@@ -16,16 +16,18 @@ import java.time.LocalDateTime;
 @Table (name = "CategoryDetail")
 public class CategoryDetail implements Serializable {
     @Id
-    @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "categoryID", referencedColumnName = "categoryID")
-    private Category categoryID;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @JoinColumn(name = "id")
+    protected Long id;
 
     @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "categoryName", referencedColumnName = "categoryName")
+    @JoinColumn (name = "category_id", referencedColumnName = "id")
+    protected Category category;
+
+    @JoinColumn (name = "categoryName")
     private Category categoryName;
 
     @Column (name = "categoryStatus")
-    @NotNull
     private boolean categoryStatus;
 
     @Column (name = "dateCreate")
@@ -39,7 +41,7 @@ public class CategoryDetail implements Serializable {
     private LocalDateTime dateUpdate;
 
     public String toString(){
-        return "CategoryDetail [categoryID " + categoryID + ", categoryName " + categoryName + ", categoryStatus " + categoryStatus + ", dateCreate " + dateCreate + ", dateUpdate" + dateUpdate + "]";
+        return "CategoryDetail [categoryID " + id + ", categoryName " + categoryName + ", categoryStatus " + categoryStatus + ", dateCreate " + dateCreate + ", dateUpdate" + dateUpdate + "]";
     }
 }
 

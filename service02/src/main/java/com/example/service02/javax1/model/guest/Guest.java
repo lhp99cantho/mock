@@ -21,9 +21,9 @@ import org.springframework.format.annotation.NumberFormat;
 public class Guest {
 
     @Id
-    @Column(name = "guestID", unique = true, length = 10)
+    @Column(name = "id", unique = true, length = 10)
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-    private Integer guestID;
+    private Integer id;
 
     @NotEmpty (message = "Guest Name is required!")
     @NotBlank
@@ -49,7 +49,7 @@ public class Guest {
     private String guestAddress;
 
     public String toString() {
-        return "Guest [id " + guestID + ", name = " + guestName + ", email = " + guestEmail + ", sdt = " + guestPhoneNumber + ", address = " + guestAddress + "]";
+        return "Guest [id " + id + ", name = " + guestName + ", email = " + guestEmail + ", sdt = " + guestPhoneNumber + ", address = " + guestAddress + "]";
     }
 
 }

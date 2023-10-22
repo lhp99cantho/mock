@@ -1,5 +1,6 @@
 package com.example.service02.javax1.model.store.product;
 
+import com.example.service02.javax1.model.store.Store;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
@@ -23,9 +24,8 @@ public class Category implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column (name = "categoryID", unique = true, length = 9)
-    @OneToOne (mappedBy = "categoryID")
-    private Category categoryID;
+    @Column (name = "id", unique = true, length = 9)
+    protected Long id;
 
     @NotEmpty(message = "Category Name is required!")
     @NotBlank
@@ -52,15 +52,29 @@ public class Category implements Serializable {
     @Column(name = "isDel")
     private boolean isDel;
 
-    public Category (Category categoryID, String categoryName, String categoryImages) {
-        this.categoryID = categoryID;
+    @OneToOne(mappedBy = "category")
+    protected ProductDetail productDetail;
+
+    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
+    protected Product product;
+
+    @OneToOne(mappedBy = "category")
+    protected CategoryDetail categoryDetail;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "store_id", referencedColumnName = "id")
+    protected Store store;
+
+
+    public Category (Long id, String categoryName, String categoryImages) {
+        this.id = id;
         this.categoryName = categoryName;
         this.categoryImages = categoryImages;
     }
 
     @Override
     public String toString() {
-        return "Category [categoryID = " + categoryID + ", categoryName = " + categoryName + ", categoryImages = " + categoryImages + ", categoryCreateDate = "
+        return "Category [categoryID = " + id + ", categoryName = " + categoryName + ", categoryImages = " + categoryImages + ", categoryCreateDate = "
                 + categoryCreateDate + ", categoryUpdateDate = " + categoryUpdateDate + ", isDel=" + isDel + "]";
     }
 

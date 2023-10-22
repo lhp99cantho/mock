@@ -15,13 +15,17 @@ import java.io.Serializable;
 public class StoreDetail implements Serializable {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @JoinColumn(name = "id")
+    protected Long id;
+
     @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "storeID", referencedColumnName = "storeID")
-    private Store storeID;
+    @JoinColumn (name = "store_id", referencedColumnName = "id")
+    private Store store;
 
     @NotEmpty
-    @JoinColumn(name = "storeName", referencedColumnName = "storeName")
-    protected String storeName;
+    @JoinColumn(name = "storeName")
+    protected Store storeName;
 
     @Column (name = "storesIsDeleted")
     private boolean storesIsDeleted;
@@ -30,6 +34,6 @@ public class StoreDetail implements Serializable {
     protected String storeAvatar;
 
     public String toString () {
-        return "StoreDetail [storeID " + storeID + ", storeName " + storeName + ", storeIsDelete " + storesIsDeleted + ", storeAvatar " + storeAvatar + "]";
+        return "StoreDetail [storeID " + id + ", storeName " + storeName + ", storeIsDelete " + storesIsDeleted + ", storeAvatar " + storeAvatar + "]";
     }
 }

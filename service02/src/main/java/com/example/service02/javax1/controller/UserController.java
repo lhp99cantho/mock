@@ -98,22 +98,22 @@ public class UserController {
     }
 
     @PostMapping("/register")
-    public String register(Model m, User user, @RequestParam("userUsername") String userUsername,
-                           @RequestParam("userName") String userName, @RequestParam("userPhoneNumber") String userPhoneNumber,
-                           @RequestParam("userEmail") String userEmail, @RequestParam("userPassword") String userPassword,
+    public String register(Model m, User user, @RequestParam("name") String name,
+                           @RequestParam("userName") String userName, @RequestParam("phoneNumber") String phoneNumber,
+                           @RequestParam("email") String userEmail, @RequestParam("password") String password,
                            @RequestParam("confirmPassword") String confirmPass) {
         int loi = 0;
-        user = new User(userUsername, userPassword, userName, userEmail, userPhoneNumber, false, false,"default.jpg");
-        user = user.getUserID().getUserName();
+        user = new User(name, userName, password, userEmail, phoneNumber, false, false,"default.jpg");
+        user = user.getId().getName;
 
         session.set("user_temp2", user);
 
         //Kiem tra username
-        if (userUsername.isEmpty()) {
+        if (userName.isEmpty()) {
             m.addAttribute("messageU", "*Username không được bỏ trống!");
             loi++;
         } else {
-            if (userDao.findById(Long.valueOf(userUsername)).isEmpty()) {
+            if (userDao.findById(Long.valueOf(userName)).isEmpty()) {
                 m.addAttribute("messageU", "*Username đã tồn tại!");
                 loi++;
             } else {
@@ -122,7 +122,7 @@ public class UserController {
         }
 
         //Kiem tra ho ten
-        if (userName.isEmpty()) {
+        if (name.isEmpty()) {
             m.addAttribute("messageF", "*Họ tên không được bỏ trống!");
             loi++;
         } else {
@@ -131,11 +131,11 @@ public class UserController {
         String dinhDangSdt = "^(0|\\+84)(\\s|\\.)?((3[2-9])|(5[689])|(7[06-9])|(8[1-689])|(9[0-46-9]))(\\d)(\\s|\\.)?(\\d{3})(\\s|\\.)?(\\d{3})$";
 
         //Kiem tra so dien thoai
-        if (userPhoneNumber.isEmpty()) {
+        if (phoneNumber.isEmpty()) {
             m.addAttribute("messagePN", "*Số điện thoại không được bỏ trống!");
             loi++;
         } else {
-            if (!userPhoneNumber.matches(dinhDangSdt)) {
+            if (!phoneNumber.matches(dinhDangSdt)) {
                 m.addAttribute("messagePN", "*Định dạng sdt không hợp lệ!");
                 loi++;
             } else {
@@ -161,11 +161,11 @@ public class UserController {
         }
 
         //Kiem tra password
-        if (userPassword.isEmpty()) {
+        if (password.isEmpty()) {
             m.addAttribute("messageP", "*Vui lòng nhập mật khẩu!");
             loi++;
         } else {
-            if (userPassword.length() < 3) {
+            if (password.length() < 3) {
                 m.addAttribute("messageP", "*Mật khẩu mới phải có ít nhất 3 ký tự!");
                 loi++;
             } else {
@@ -178,7 +178,7 @@ public class UserController {
             m.addAttribute("messageCP", "*Vui lòng nhập lại mật khẩu!");
             loi++;
         } else {
-            if (!confirmPass.equals(userPassword)) {
+            if (!confirmPass.equals(password)) {
                 m.addAttribute("messageCP", "*Mật khẩu nhập lại không trùng khớp!");
                 loi++;
             } else {
@@ -280,7 +280,7 @@ public class UserController {
             m.addAttribute("messageOP", "*Vui lòng nhập mật khẩu cũ!");
             loi++;
         } else {
-            if (!user.getUserPassword().equals(oldPass)) {
+            if (!user.getPassword().equals(oldPass)) {
                 m.addAttribute("messageOP", "*Vui lòng nhập đúng mật khẩu cũ!");
                 loi++;
             } else {
@@ -310,7 +310,7 @@ public class UserController {
             }
         }
         if (loi == 0) {
-            user.setUserPassword(userPassword);
+            user.setPassword(userPassword);
             userDao.save(user);
             m.addAttribute("message", "*Đổi mật khẩu thành công!!!");
         }

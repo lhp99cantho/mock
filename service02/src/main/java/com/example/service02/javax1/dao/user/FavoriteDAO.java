@@ -11,19 +11,19 @@ import java.util.List;
 
 public interface FavoriteDAO extends JpaRepository<Favorite, Long> {
 
-    @Query (value = "SELECT f FROM Favorite f WHERE f.userID = ?1")
+    @Query (value = "SELECT f FROM Favorite f WHERE f.user_id = ?1")
     List<Favorite> getAllFav(String username);
 
-    @Query (value = "SELECT f FROM Favorite f WHERE f.userID = ?1 and f.productID= ?2")
+    @Query (value = "SELECT f FROM Favorite f WHERE f.user_id = ?1 and f.product_id= ?2")
     Favorite getAllFav2(String username,Long id);
 
-    @Query (value = "SELECT count(f) FROM Favorite f WHERE f.userID = ?1")
+    @Query (value = "SELECT count(f) FROM Favorite f WHERE f.user_id = ?1")
     Integer getCountFav(String username);
 
-    @Query (value = "SELECT count(f) FROM Favorite f WHERE f.productID = ?1")
+    @Query (value = "SELECT count(f) FROM Favorite f WHERE f.product_id = ?1")
     Integer getCountFavLike(Long id);
 
-    @Query (value="SELECT new Report(f.productID, p.productName ,count(f) as countReport FROM Favorite f, Product p "+"WHERE p.productName LIKE ?1"
-            + " GROUP BY p.productID, p.productName")
+    @Query (value="SELECT new Report(f.product_id, p.productName ,count(f) as countReport FROM Favorite f, Product p "+"WHERE p.productName LIKE ?1"
+            + " GROUP BY p.product_id, p.productName")
     Page<Report1> getListReport(String keyword, Pageable pageable);
 }

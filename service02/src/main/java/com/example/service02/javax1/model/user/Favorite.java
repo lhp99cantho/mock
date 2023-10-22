@@ -18,13 +18,16 @@ public class Favorite implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long favoriteID;
+    @Column(name = "id")
+    private Long id;
 
-    @ManyToOne @JoinColumn(name="productID")
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name="productID")
     private Product productID;
 
-    @ManyToOne @JoinColumn(name = "userID")
-    private User userID;
+    @ManyToOne
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
+    protected User user;
 
     @Temporal(TemporalType.DATE)
     private Date likedate = new Date();

@@ -1,6 +1,9 @@
 package com.example.service02.javax1.model.store.product;
 
 import com.example.service02.javax1.model.store.Store;
+import com.example.service02.javax1.model.store.order.Order;
+import com.example.service02.javax1.model.store.order.OrderDetail;
+import com.example.service02.javax1.model.user.Comments;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.*;
@@ -21,15 +24,13 @@ public class Product implements Serializable {
 
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
-    @Column (name = "productId", unique = true, length = 11)
-    @OneToOne (mappedBy = "productID")
-    protected Product productID;
+    @Column (name = "id", unique = true, length = 11)
+    protected Long id;
 
     @NotEmpty (message = "Product name is required!")
     @NotBlank
     @Column (name = "productName")
-    @OneToOne (mappedBy = "productName")
-    protected Product productName;
+    protected String productName;
 
     @NotEmpty (message = "Product Description is required!")
     @NotBlank
@@ -39,22 +40,36 @@ public class Product implements Serializable {
     @NotEmpty (message = "Product price is required!")
     @NotBlank
     @Column (name = "productPrice")
-    protected int productPrice;
+    protected float productPrice;
 
     @NotEmpty (message = "Product quantity is required!")
     @NotBlank
     @Column (name = "productQuantity")
     protected int productQuantity;
 
+    @ManyToOne
+    @JoinColumn(name = "order_id", referencedColumnName = "id")
+    protected Order order;
 
-    @OneToOne (cascade = CascadeType.ALL)
-    private Store storeID;
+    @OneToOne(mappedBy = "product")
+    protected OrderDetail orderDetail;
 
-    @OneToOne (cascade = CascadeType.ALL)
-    private Store storeName;
+    @ManyToOne
+    @JoinColumn(name = "store_id",referencedColumnName = "id")
+    protected Store store;
 
-    @OneToOne (cascade = CascadeType.ALL)
-    private Category categoryID;
+    @OneToOne(mappedBy = "product")
+    protected ProductDetail productDetail;
+
+    @JoinColumn(name = "storeName")
+    protected Store storeName;
+
+    @ManyToOne
+    @JoinColumn(name = "category_id" ,referencedColumnName = "id")
+    protected Category category;
+
+    @OneToOne(mappedBy = "product")
+    protected Comments comments;
 
     @NotEmpty (message = "Product images is required!")
     @NotBlank
@@ -68,6 +83,6 @@ public class Product implements Serializable {
 
     @Override
     public String toString(){
-        return "Product [productID " + productID + ", productName " + productName + ", productDes " + productDes + ", productPrice " + productPrice + ", productQuantity " + productQuantity + ", productImg " + productImg + ", productRating " + productRating + ", categoryID " + categoryID + ", storeID " + storeID + ", storeName " + storeName + "]";
+        return "Product [productID " + id + ", productName " + productName + ", productDes " + productDes + ", productPrice " + productPrice + ", productQuantity " + productQuantity + ", productImg " + productImg + ", productRating " + productRating + ", categoryID " +  ", storeID " + id + ", storeName " + storeName + "]";
     }
 }

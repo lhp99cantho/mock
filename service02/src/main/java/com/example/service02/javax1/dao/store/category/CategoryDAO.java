@@ -13,10 +13,10 @@ public interface CategoryDAO extends JpaRepository<Category, String> {
 
     Page<Category> findAllBynameLike(String keywords, Pageable pageable);
 
-    @Query("SELECT DISTINCT p.categoryID FROM Product p")
+    @Query("SELECT DISTINCT p.category_id FROM Product p")
     List<Category> findAllCategoryInProduct();
 
-    @Query(value = "SELECT p FROM Product p WHERE p.categoryID = ?1")
+    @Query(value = "SELECT p FROM Product p WHERE p.category_id = ?1")
     Page<Product> getAllCategoryProduct(String keywords, Pageable pageable);
 
     @Query("SELECT count(c) FROM Category c")

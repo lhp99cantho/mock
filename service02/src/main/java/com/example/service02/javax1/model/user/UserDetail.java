@@ -18,14 +18,18 @@ public class UserDetail {
 
 
     @Id
-    @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "userID", referencedColumnName = "userID")
-    private User userID;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
+    protected Long id;
 
-    @Id
     @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "storeID", referencedColumnName = "storeID")
-    private Store storeID;
+    @JoinColumn (name = "user_id", referencedColumnName = "id")
+    protected User user;
+
+
+    @OneToOne (cascade = CascadeType.ALL)
+    @JoinColumn (name = "store_id", referencedColumnName = "id")
+    private Store store;
 
     @NotNull
     @NotBlank
@@ -39,7 +43,7 @@ public class UserDetail {
 
     @Override
     public String toString() {
-        return "UserfollowModels [Userid=" + userID + ", Storeid=" + storeID + ", isdeleted=" + isDeleted + ", dateUpdate ="
+        return "UserfollowModels [Userid=" + id + ", Storeid=" + store + ", isdeleted=" + isDeleted + ", dateUpdate ="
                 + dateUpdate + "]";
     }
 }

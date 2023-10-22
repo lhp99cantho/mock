@@ -21,22 +21,22 @@ public class OrderDetail implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "orderID", referencedColumnName = "orderID")
-    private Order orderID;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @JoinColumn (name = "id")
+    private Long id;
 
-    @Id
-    @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "productID", referencedColumnName = "productID")
-    private Product productID;
+    @OneToOne(mappedBy = "orderDetail")
+    protected Order order;
 
     @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "productName", referencedColumnName = "productName")
-    private Product productName;
+    @JoinColumn (name = "product_id", referencedColumnName = "id")
+    private Product product;
 
-    @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "productPrice", referencedColumnName = "productPrice")
-    private Product productPrice;
+    @JoinColumn (name = "productName")
+    protected Product productName;
+
+    @JoinColumn (name = "productPrice")
+    protected Product productPrice;
 
     @Column(name = "productQty")
     @NotNull
@@ -51,6 +51,6 @@ public class OrderDetail implements Serializable {
     private int orderStatus;
 
     public String toString() {
-        return "OrderDetail [orderID " + orderID + ", productID " + productID + ", productName " + productName + ", productPrice " + productPrice + ", orderCount " + orderCount + ", orderStatus " + orderStatus + "]";
+        return "OrderDetail [orderID " + id + ", productName " + productName + ", productPrice " + productPrice + ", orderCount " + orderCount + ", orderStatus " + orderStatus + "]";
     }
 }

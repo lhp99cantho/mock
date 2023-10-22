@@ -1,7 +1,9 @@
 package com.example.service02.javax1.model.store.order;
 
 import com.example.service02.javax1.model.store.Store;
+import com.example.service02.javax1.model.store.product.Product;
 import com.example.service02.javax1.model.user.Address;
+import com.example.service02.javax1.model.user.Comments;
 import com.example.service02.javax1.model.user.User;
 import com.example.service02.javax2.shipper.Shipper;
 import jakarta.persistence.*;
@@ -34,64 +36,66 @@ public class Order implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "orderID", unique = true, length = 6)
-    @OneToOne (mappedBy = "orderID")
-    private Order orderID;
+    @Column(name = "id", unique = true, length = 6)
+    protected long id;
 
-    @Id
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "userID", referencedColumnName = "userID")
-    private User userID;
+    @ManyToOne
+    @JoinColumn (name = "store_id", referencedColumnName = "id")
+    protected Store store;
 
-    @Id
-    @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "storeID", referencedColumnName = "storeID")
-    private Store storeID;
+    @ManyToOne
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
+    protected User user;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "userName", referencedColumnName = "userName")
-    private User user;
+    @JoinColumn(name = "orderDetail_id", referencedColumnName = "id")
+    protected OrderDetail orderDetail;
 
-    @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "userAddress", referencedColumnName = "userAddress")
-    private Address userAddress;
+    @OneToMany(mappedBy = "order" ,cascade = CascadeType.ALL)
+    protected Product product;
+
+    @OneToOne (mappedBy = "comments")
+    protected Comments comments;
+
+    @JoinColumn (name = "userAddress")
+    protected Address userAddress;
 
     @NotEmpty(message = "User Phone Number is required!")
     @NotBlank
     @NumberFormat
-    @Column(name = "userPhoneNumber",unique = true, length = 10)
-    private String userPhoneNumber;
+    @Column(name = "PhoneNumber",unique = true, length = 10)
+    protected String phoneNumber;
 
     @NotNull
     @DateTimeFormat
     @Temporal(TemporalType.DATE)
     @Column(name = "orderDateCreate")
-    private LocalDateTime orderDateCreate;
+    protected LocalDateTime orderDateCreate;
 
     @NotEmpty(message = "Order Status is required!")
     @NotBlank
     @Max(5)
     @Column(name = "orderStatus")
-    private boolean orderStatus;
+    protected boolean orderStatus;
 
     @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "shipperID", referencedColumnName = "shiperID")
-    private Shipper shipperID;
+    @JoinColumn (name = "shipper_id", referencedColumnName = "id")
+    protected Shipper shipper;
 
     @NotEmpty(message = "Order Summary Cost is required!")
     @NotBlank
     @Column(name = "orderSumCost")
-    private int orderSumCost;
+    protected int orderSumCost;
 
-    private Boolean cancelOrder;
+    protected Boolean cancelOrder;
 
     @Column(name = "shippingStatus")
-    private int shippingStatus;
+    protected int shippingStatus;
 
     @Override
     public String toString() {
-        return "Order [oderID = " + orderID + ", userID = " + userID + ", storeID = " + storeID + ", userAddress = " + userAddress
-                + ", userPhoneNumber = " + userPhoneNumber + ", status = " + orderStatus + ", orderSummaryCost = " + orderSumCost + ", shippingStatus = " + shippingStatus
+        return "Order [oderID = " + id + ", storeID = " + store + ", userAddress = " + userAddress
+                + ", userPhoneNumber = " + phoneNumber + ", status = " + orderStatus + ", orderSummaryCost = " + orderSumCost + ", shippingStatus = " + shippingStatus
                 + "]";
     }
 

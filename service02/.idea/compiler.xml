@@ -9,6 +9,7 @@
         <module name="service02" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="20" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

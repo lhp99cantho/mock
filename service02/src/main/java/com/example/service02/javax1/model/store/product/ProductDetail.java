@@ -18,13 +18,12 @@ import java.time.LocalDateTime;
 public class ProductDetail implements Serializable {
 
     @Id
-    @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "productID", referencedColumnName = "productID")
-    private Product productID;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @JoinColumn (name = "id")
+    protected Long id;
 
-    @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "productName", referencedColumnName = "productName")
-    private Product productName;
+    @JoinColumn (name = "productName")
+    protected String productName;
 
     @Column (name = "productQuantity")
     private int productQuantity;
@@ -42,12 +41,12 @@ public class ProductDetail implements Serializable {
     private boolean productIsSelling;
 
     @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "categoryID", referencedColumnName = "categoryID")
-    protected Category categoryID;
+    @JoinColumn (name = "product_id", referencedColumnName = "id")
+    protected Product product;
 
     @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "storeID", referencedColumnName = "storeID")
-    private Store storeID;
+    @JoinColumn (name = "category_id", referencedColumnName = "id")
+    protected Category category;
 
     @Column (name = "productRating")
     @NotEmpty (message = "Product Rating is required!")
@@ -68,7 +67,7 @@ public class ProductDetail implements Serializable {
     private String productImg;
 
     public String toString(){
-        return "ProductDetail [productID " + productID + ", productName " + productName + ", productQuantity " + productQuantity + ", productPrice " + productPrice + ", productSold " + productSold + ", productIsActive " + productIsActive + ", productIsSelling " + productIsSelling + ", categoryID " + categoryID + ", storeID " + storeID + ", productRating " + productRating + ", productCreateDate " + productCreateDate + ", productUpdateDate "+ productUpdateDate + ", productImg " + productImg + "]";
+        return "ProductDetail [ID " + id + ", productName " + productName + ", productQuantity " + productQuantity + ", productPrice " + productPrice + ", productSold " + productSold + ", productIsActive " + productIsActive + ", productIsSelling " + productIsSelling + ", categoryID " + category+ ", storeID "  + ", productRating " + productRating + ", productCreateDate " + productCreateDate + ", productUpdateDate "+ productUpdateDate + ", productImg " + productImg + "]";
     }
 
 }

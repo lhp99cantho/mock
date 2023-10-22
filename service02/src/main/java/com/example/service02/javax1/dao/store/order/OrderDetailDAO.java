@@ -9,10 +9,10 @@ import java.util.List;
 
 public interface OrderDetailDAO extends JpaRepository<OrderDetail, Order> {
 
-    @Query(value = "SELECT o FROM OrderDetail o WHERE o.orderID = ?1")
+    @Query(value = "SELECT o FROM OrderDetail o WHERE o.order_id = ?1")
     List<OrderDetail> getAllOrder(Order orderID);
 
-    @Query(value = "SELECT sum(o.productQty * p.productPrice) FROM OrderDetail o, Product p WHERE o.orderID = ?1")
+    @Query(value = "SELECT sum(o.productQty * p.productPrice) FROM OrderDetail o, Product p WHERE o.order_id = ?1")
     Double getAmount(Order orderID);
 
     @Query(value = "SELECT sum(o.productQty * p.productPrice) FROM OrderDetail o, Product p WHERE o.orderStatus = 1")

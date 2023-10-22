@@ -24,32 +24,25 @@ public class Comments implements Serializable {
 
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
-    @Column (name = "commentID", unique = true, length = 12)
-    private int commentID;
+    @Column (name = "id", unique = true, length = 12)
+    protected int id;
+
+    @ManyToOne
+    @JoinColumn (name = "user_id", referencedColumnName = "id")
+    protected User user;
+
 
     @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "userID", referencedColumnName = "userID")
-    private User userID;
+    @JoinColumn (name = "product_id", referencedColumnName = "id")
+    protected Product product;
 
     @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "userName", referencedColumnName = "userName")
-    private User userName;
+    @JoinColumn (name = "store_id", referencedColumnName = "id")
+    protected Store store;
 
     @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "userAvatar", referencedColumnName = "userAvatar")
-    private User userAvatar;
-
-    @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "productID", referencedColumnName = "productID")
-    private Product productID;
-
-    @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "storeID", referencedColumnName = "storeID")
-    private Store storeID;
-
-    @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "orderID", referencedColumnName = "orderID")
-    private Order orderID;
+    @JoinColumn (name = "order_id", referencedColumnName = "id")
+    private Order order;
 
     @Column (name = "commentRating")
     private int commentRating;
@@ -69,8 +62,8 @@ public class Comments implements Serializable {
     @Column (name = "commentUpdateAt")
     private LocalDateTime commentUpdateAt;
 
-    public String toString() {
-        return "Comments [commentID " + commentID + ", userID " + userID + ", userName " + userName + ", userAvatar " + userAvatar + ", productID " + productID + ", storeID " + storeID + ", orderID " + orderID + ", commentRating " + commentRating + ", commentContent " + commentContent + ", commentContent " + commentCreateAt + ", commentUpdateAt " + commentUpdateAt + "]";
-    }
+//    public String toString() {
+//        return "Comments [commentID " + id + ", userID " + ", userName " + userName + ", userAvatar " + userAvatar + ", productID " + productID + ", storeID " + storeID + ", orderID " + orderID + ", commentRating " + commentRating + ", commentContent " + commentContent + ", commentContent " + commentCreateAt + ", commentUpdateAt " + commentUpdateAt + "]";
+//    }
 
 }

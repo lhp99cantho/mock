@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.Query;
 public interface UserDAO extends JpaRepository<User, Long> {
 
 
-    @Query("SELECT u FROM User u WHERE u.userUsername LIKE ?1")
+    @Query("SELECT u FROM User u WHERE u.Username LIKE ?1")
     Page<User> findByKeywords(String keywords, Pageable pageable);
 
     Page<User> findAllByNameLike(String keywords, Pageable pageable);

@@ -18,16 +18,19 @@ import java.time.LocalDateTime;
 public class Address implements Serializable {
 
     @Id
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn (name = "userID", referencedColumnName = "userID")
-    private User userID;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
+    protected long id;
+
+    @ManyToOne
+    @JoinColumn (name = "user_id", referencedColumnName = "id")
+    protected User user;
 
     @NotEmpty(message = "Address is required!")
     @NotBlank
     @MemoryAddress
     @Column(name = "userAddress")
-    @OneToOne (mappedBy = "userAddress")
-    private Address userAddress;
+    private String userAddress;
 
     @Temporal(TemporalType.DATE)
     @NotBlank
@@ -36,7 +39,7 @@ public class Address implements Serializable {
 
     @Override
     public String toString() {
-        return "Address [userID=" + userID + ", dress=" + userAddress + "]";
+        return "Address [userID=" + id + ", dress=" + userAddress + "]";
     }
 
 }
