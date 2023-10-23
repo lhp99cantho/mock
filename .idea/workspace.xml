@@ -5,58 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ef572f1-ddd4-4d3b-9062-28c6f14e8d6d" name="Changes" comment="Merge code cho DB">
-      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/cart/Voucher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_17_2023_5_24_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_17_2023_5_24_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_17_2023_5_24_PM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_17_2023_5_24_PM__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_6_2023_1_26_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_6_2023_1_26_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_6_2023_1_32_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_6_2023_1_32_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_17_2023_7_11_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_17_2023_7_11_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service02/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service02/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service02/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service02/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service02/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service02/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/Service02Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/Service02Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/store/category/CategoryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/store/category/CategoryDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/store/order/OrderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/store/order/OrderDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/store/order/OrderDetailDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/store/order/OrderDetailDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/store/product/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/store/product/ProductDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/user/FavoriteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/user/FavoriteDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/user/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/user/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/guest/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/guest/Guest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/StoreDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/StoreDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/cart/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/order/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/order/OrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/CategoryDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/CategoryDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/ProductDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/ProductDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Comments.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Comments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Favorite.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Favorite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/UserDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/UserDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax2/shipper/Shipper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax2/shipper/Shipper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/classes/com/example/service02/RestTemplateConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/classes/com/example/service02/Service02Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/classes/com/example/service02/javax1/connection/DBConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/classes/com/example/service02/javax1/model/guest/Guest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/classes/com/example/service02/javax1/model/store/Store.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/classes/com/example/service02/javax1/model/store/order/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/classes/com/example/service02/javax1/model/store/product/Category.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/classes/com/example/service02/javax1/model/store/product/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/classes/com/example/service02/javax1/model/user/Address.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/classes/com/example/service02/javax1/model/user/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/classes/com/example/service02/javax1/model/user/UserFollow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/classes/com/example/service02/javax2/shipper/Shipper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/surefire-reports/TEST-com.example.service02.Service02ApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/surefire-reports/com.example.service02.Service02ApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service02/target/test-classes/com/example/service02/Service02ApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="user" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -152,7 +108,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="microservices-system" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="microservices-system" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="eureka-server" />
