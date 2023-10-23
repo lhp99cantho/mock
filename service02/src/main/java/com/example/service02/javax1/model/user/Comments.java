@@ -25,7 +25,7 @@ public class Comments implements Serializable {
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
     @Column (name = "id", unique = true, length = 12)
-    protected int id;
+    protected long id;
 
     @ManyToOne
     @JoinColumn (name = "user_id", referencedColumnName = "id")

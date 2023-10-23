@@ -4,15 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ef572f1-ddd4-4d3b-9062-28c6f14e8d6d" name="Changes" comment="Merge code cho DB">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_17_2023_5_24_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_17_2023_5_24_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_17_2023_5_24_PM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_17_2023_5_24_PM__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_6_2023_1_26_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_6_2023_1_26_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_6_2023_1_32_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_6_2023_1_32_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_17_2023_7_11_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_17_2023_7_11_PM__Changes_.xml" afterDir="false" />
+    <list default="true" id="1ef572f1-ddd4-4d3b-9062-28c6f14e8d6d" name="Changes" comment="nhan">
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/controller/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/controller/UpdateProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/validator/UserValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service02/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/admin/AdminDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/dao/admin/AdminDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/StoreDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/StoreDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/cart/Voucher.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/cart/Voucher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/order/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/order/OrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/CategoryDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/CategoryDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/ProductDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/store/product/ProductDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Comments.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Comments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Favorite.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/Favorite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/UserDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/model/user/UserDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/repository/guest/GuestRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/service02/src/main/java/com/example/service02/javax1/repository/GuestRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +115,9 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.service02.Repository" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.service02.javax1.service.Impl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -359,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697544825524</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="nhan">
+      <created>1698062178122</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1698062178122</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,6 +428,7 @@
     <MESSAGE value="Thêm thư viện" />
     <MESSAGE value="Chỉnh sửa workspace" />
     <MESSAGE value="Merge code cho DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge code cho DB" />
+    <MESSAGE value="nhan" />
+    <option name="LAST_COMMIT_MESSAGE" value="nhan" />
   </component>
 </project>

@@ -21,7 +21,7 @@ public class Voucher {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column (name = "id", unique = true)
-    protected Long id;
+    protected long id;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn (name = "store_id", referencedColumnName = "id")

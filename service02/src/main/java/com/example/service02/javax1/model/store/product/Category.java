@@ -25,7 +25,7 @@ public class Category implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column (name = "id", unique = true, length = 9)
-    protected Long id;
+    protected long id;
 
     @NotEmpty(message = "Category Name is required!")
     @NotBlank

@@ -17,7 +17,7 @@ public class StoreDetail implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @JoinColumn(name = "id")
-    protected Long id;
+    protected long id;
 
     @OneToOne (cascade = CascadeType.ALL)
     @JoinColumn (name = "store_id", referencedColumnName = "id")

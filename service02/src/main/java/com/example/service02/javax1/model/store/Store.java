@@ -28,7 +28,7 @@ public class Store implements Serializable {
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
     @Column(name = "id")
-    protected Long id;
+    protected long id;
 
     @OneToMany (mappedBy = "store", cascade = CascadeType.ALL)
     protected Order order;

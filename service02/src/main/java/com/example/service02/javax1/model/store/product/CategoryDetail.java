@@ -18,7 +18,7 @@ public class CategoryDetail implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @JoinColumn(name = "id")
-    protected Long id;
+    protected long id;
 
     @OneToOne (cascade = CascadeType.ALL)
     @JoinColumn (name = "category_id", referencedColumnName = "id")

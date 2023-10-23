@@ -21,7 +21,7 @@ public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
-    protected int id;
+    protected long id;
 
     @NotEmpty(message = "Name is required!")
     @NotBlank

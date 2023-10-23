@@ -23,7 +23,7 @@ public class OrderDetail implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @JoinColumn (name = "id")
-    private Long id;
+    private long id;
 
     @OneToOne(mappedBy = "orderDetail")
     protected Order order;

@@ -25,7 +25,7 @@ public class Product implements Serializable {
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
     @Column (name = "id", unique = true, length = 11)
-    protected Long id;
+    protected long id;
 
     @NotEmpty (message = "Product name is required!")
     @NotBlank

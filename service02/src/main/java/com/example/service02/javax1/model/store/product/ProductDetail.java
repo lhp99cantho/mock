@@ -20,7 +20,7 @@ public class ProductDetail implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @JoinColumn (name = "id")
-    protected Long id;
+    protected long id;
 
     @JoinColumn (name = "productName")
     protected String productName;

@@ -14,7 +14,6 @@ public class AdminDAO {
     public Admin getAdmin(int adminID) {
         String sqlString = "Select * from Admin where adminID =?";
         try {
-
             Connection conn = new DBConnection().getConnection();
             PreparedStatement ps = conn.prepareStatement(sqlString);
             ps.setInt(1,adminID);
