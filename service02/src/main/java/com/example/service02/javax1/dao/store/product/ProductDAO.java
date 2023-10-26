@@ -2,8 +2,6 @@ package com.example.service02.javax1.dao.store.product;
 
 import com.example.service02.javax1.model.store.product.Product;
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotEmpty;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -12,7 +10,7 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface ProductDAO extends JpaRepository<Product, Long> {
-    Page<Product> findAllByProductNameLike (@NotEmpty(message = "Product name is required!") @NotBlank Product productName, Pageable pageable);
+    Page<Product> findAllByProductNameLike (String productName, Pageable pageable);
 
     @Query ("SELECT max(p.product_id) FROM Product p")
     Long findIDMax();

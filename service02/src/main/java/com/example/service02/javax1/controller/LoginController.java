@@ -3,12 +3,17 @@ package com.example.service02.javax1.controller;
 import com.example.service02.javax1.dao.user.UserDAO;
 import com.example.service02.javax1.model.user.User;
 import com.example.service02.javax1.service.SessionService;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+@Controller
 public class LoginController {
     private String url;
     @Autowired
@@ -17,13 +22,13 @@ public class LoginController {
     @Autowired
     UserDAO userDao;
 
-    @RequestMapping("/logout")
-    public String logout() {
+    @GetMapping(value = "/logout")
+    public String logout(Model model, HttpServletRequest request, HttpServletResponse response) {
         session.remove("user");
         return "redirect:/UTOP/index.html";
     }
-    @RequestMapping("/login")
-    public String loginPage(Model m) {
+    @GetMapping(value = "/login")
+    public String loginPage(Model model) {
         session.remove("user_temp");
         return urlPage + "login";
     }

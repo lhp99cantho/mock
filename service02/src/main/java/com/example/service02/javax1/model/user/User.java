@@ -40,8 +40,8 @@ public class User implements Serializable {
     @Column(name = "PhoneNumber", unique = true, length = 10)
     protected String phoneNumber;
 
-    @NotEmpty(message = "Username is required!")
     @NotBlank
+    @NotEmpty(message = "Username is required!")
     @Column(name = "Username", unique = true, length = 16)
     private String userName;
 

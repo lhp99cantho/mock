@@ -62,7 +62,6 @@ public class UpdateProfileController {
         }
         if (loi == 0) {
             user = session.get("user", "");
-            user.setUserName(userName);
             user.setPhoneNumber(userPhoneNumber);
             user.setEmail(userEmail);
 

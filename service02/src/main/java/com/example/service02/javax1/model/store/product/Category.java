@@ -10,6 +10,8 @@ import org.hibernate.annotations.CreationTimestamp;
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @Setter
@@ -56,7 +58,7 @@ public class Category implements Serializable {
     protected ProductDetail productDetail;
 
     @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
-    protected Product product;
+    protected List<Product> product = new ArrayList<>();
 
     @OneToOne(mappedBy = "category")
     protected CategoryDetail categoryDetail;

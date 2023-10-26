@@ -1,28 +1,35 @@
 package com.example.service02.javax1.controller;
 
-import com.example.service02.javax1.dao.store.order.OrderDAO;
-import com.example.service02.javax1.dao.store.order.OrderDetailDAO;
-import com.example.service02.javax1.dao.store.product.ProductDAO;
-import com.example.service02.javax1.model.store.order.OrderDetail;
-import com.example.service02.javax1.model.user.Favorite;
-import org.springframework.beans.BeanUtils;
+
+import com.example.service02.javax1.model.store.product.Category;
+import com.example.service02.javax1.model.store.product.Product;
+import com.example.service02.javax1.service.CategoryService;
+import com.example.service02.javax1.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.List;
 
 @Controller
-@RequestMapping ("UTOP")
 public class ProductController {
+    @Autowired
+    private CategoryService categoryService;
 
     @Autowired
-    ProductDAO productDAO;
+    private ProductService productService;
 
-    @Autowired
-    OrderDAO orderDAO;
+    @GetMapping(value = "/product")
+    public String findAll(Model model, @RequestParam(value = "category", required = false) String categoryId) {
+        List<Category> category = categoryService.findAll();
+        List<Product> product = productService.findAll();
 
-    @Autowired
-    OrderDetailDAO orderDetailDAO;
 
-    @Autowired
-    Favorite favorite;
+        model.addAttribute("category", category);
+        model.addAttribute("product", product);
+        return "product";
+    }
+
 }
