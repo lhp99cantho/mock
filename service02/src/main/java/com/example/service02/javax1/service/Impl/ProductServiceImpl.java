@@ -5,9 +5,11 @@ import com.example.service02.javax1.model.store.product.Product;
 import com.example.service02.javax1.repository.ProductRepository;
 import com.example.service02.javax1.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class ProductServiceImpl implements ProductService {
     @Autowired
     ProductRepository productRepository;

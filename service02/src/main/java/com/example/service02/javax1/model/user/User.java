@@ -8,6 +8,7 @@ import org.springframework.format.annotation.NumberFormat;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -71,7 +72,7 @@ public class User implements Serializable {
     protected LocalDateTime userDateCreate;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    protected List<Order> order;
+    protected List<Order> order = new ArrayList<>();
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     protected Address address;
