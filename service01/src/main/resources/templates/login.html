@@ -1,0 +1,99 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+
+    <style>
+        .main {
+            margin: 0 auto;
+        }
+
+        body {
+            background-image: url('https://id.utop.vn/img/image-desktop.png');
+            background-repeat: no-repeat;
+            background-size: 40%;
+            background-position: left bottom;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 mt-5">
+            <h5 class="text-desc text-center ">
+                <a href="/login">Đăng nhập</a>/ <a href="/register">Đăng ký</a>,
+                và bắt đầu tận hưởng ưu đãi trên Utop nhé!
+            </h5>
+            <hr>
+        </div>
+        <div class="main col-md-6 mt-3">
+            <div class="card">
+                <div class="card-body">
+                    <form id="loginForm" method="POST">
+                        <span id="errorMessages" class="text-danger my-3 d-inline-block"> </span>
+
+                        <div class="form-group">
+                            <label for="username">Username <span class="text-danger">*</span></label>
+                            <input type="text" id="username"
+                                   class="form-control" name="username">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password <span class="text-danger">*</span></label>
+                            <input type="password" id="password"
+                                   class="form-control" name="password">
+                        </div>
+
+                        <a href="/forgotPassword">Forgot password?</a>
+                        <br>
+
+                        <button type="submit" class="btn btn-success mt-2">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Thêm mã JavaScript -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var loginForm = document.getElementById("loginForm");
+
+        loginForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Gửi yêu cầu đăng nhập bằng AJAX
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/login", true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        // Đăng nhập thành công, thực hiện các hành động cần thiết
+                        window.location.href = "https://order.utop.vn/";
+                    } else {
+                        // Đăng nhập không thành công, hiển thị thông báo lỗi
+                        var errorMessages = document.getElementById("errorMessages");
+                        errorMessages.innerText = "Username or Password is not correct!";
+                    }
+                }
+            };
+            var data = JSON.stringify({ username: username, password: password });
+            xhr.send(data);
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,6 +1,5 @@
 package com.example.service01;
 
-import com.example.service01.Service.EmailService;
 import com.example.service01.model.Entity.User;
 import com.example.service01.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,9 +20,6 @@ public class Service01Application implements CommandLineRunner {
     }
 
     @Autowired
-    EmailService emailService;
-
-    @Autowired
     PasswordEncoder passwordEncoder;
 
     @Autowired
@@ -31,7 +27,6 @@ public class Service01Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-//        emailService.sendEmail("phuccuongmai@gmail.com", "", "");
         String pass = passwordEncoder.encode("123456");
         System.out.println("PASS: " + pass);
 

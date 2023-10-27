@@ -43,6 +43,7 @@ public class AuthServiceImpl implements AuthService {
 
     @Autowired
     private PasswordEncoder passwordEncoder;
+
     @Autowired
     private JavaMailSenderImpl mailSender;
 
@@ -78,9 +79,9 @@ public class AuthServiceImpl implements AuthService {
     public AuthResponse register(RegisterRequest request, String siteURL) throws MessagingException {
         // new User
         User user = new User();
-        user.setFullname(request.getFullname());
         user.setUsername(request.getUsername());
         user.setEmail(request.getEmail());
+        user.setFullname(request.getFullname());
         user.setPassword(passwordEncoder.encode(request.getPassword()));
         String randomCode = RandomString.make(6);
         user.setVerificationCode(randomCode);
@@ -120,6 +121,7 @@ public class AuthServiceImpl implements AuthService {
             throw new ApplicationException();
         }
     }
+
 @Override
 public String getSiteURL(HttpServletRequest request) {
         String siteURL = request.getRequestURL().toString();

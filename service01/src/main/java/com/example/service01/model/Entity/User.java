@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -25,12 +26,12 @@ public class User implements Serializable {
     private String fullname;
 
     @NotEmpty(message = "Username is required!")
-//    @Pattern(regexp = "^[a-zA-Z0-9]*$", message = "Username must not contain special characters or spaces!")
     @Column(name = "username", unique = true)
     private String username;
 
     @JsonIgnore
     @NotEmpty(message = "Password is required!")
+    @Size(min = 8, message = "Password must be at least 8 characters long")
     @Column(name = "password")
     private String password;
 
@@ -52,5 +53,7 @@ public class User implements Serializable {
     @Column(name = "verification_code", length = 64)
     private String verificationCode;
 
+    @Column(name = "reset_password_token")
+    private String resetPasswordToken;
 
 }
