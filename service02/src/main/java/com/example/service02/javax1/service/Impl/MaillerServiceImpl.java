@@ -77,10 +77,10 @@ public class MaillerServiceImpl implements MailerService {
             MailInfo mail = list.remove(0);
             try {
                 this.send(mail);
-                System.out.println("Đang gửi "+ list.size());
+                System.out.println("Đang gửi " + list.size());
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
-
+    }
 }
