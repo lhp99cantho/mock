@@ -133,11 +133,11 @@
             <artifactId>spring-context-support</artifactId>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email -->
+        <!-- https://mvnrepository.com/artifact/com.sun.mail/jakarta.mail -->
         <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-email</artifactId>
-            <version>1.5</version>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>jakarta.mail</artifactId>
+            <version>2.0.1</version>
         </dependency>
 
     </dependencies>
