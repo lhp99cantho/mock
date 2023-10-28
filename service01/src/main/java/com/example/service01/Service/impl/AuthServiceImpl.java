@@ -109,6 +109,7 @@ public class AuthServiceImpl implements AuthService {
 
             MimeMessage message = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(message);
+            helper.setFrom("contact@apphay.com", "Apphay Support");
             helper.setTo(toAddress);
             helper.setSubject(subject);
             content = content.replace("[[name]]", user.getFullname());

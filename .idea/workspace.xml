@@ -4,36 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ef572f1-ddd4-4d3b-9062-28c6f14e8d6d" name="Changes" comment="version 22/10">
-      <change afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Controller/ForgotPasswordController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/validator/UserValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service01/src/main/resources/templates/forgot_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service01/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service01/src/main/resources/templates/message.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service01/src/main/resources/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service01/src/main/resources/templates/reset_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service01/src/main/resources/templates/style/styles.css" afterDir="false" />
+    <list default="true" id="1ef572f1-ddd4-4d3b-9062-28c6f14e8d6d" name="Changes" comment="version 27/10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Config/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Security/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Security/JwtAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Security/JwtToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Security/JwtToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service/EmailService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service/impl/AuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service01Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service01Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/model/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/model/Entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/model/request/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/model/request/LoginRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/model/request/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/model/request/RegisterRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/model/response/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/model/response/ApiResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/resources/templates/process_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/resources/templates/process_register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/resources/templates/verify_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/resources/templates/verify_fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/resources/templates/verify_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/resources/templates/verify_success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service01/src/main/resources/templates/reset_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/resources/templates/reset_password.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,9 +89,6 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="Push.Settings">
-    <option name="SHOW_DETAILS_PANEL" value="false" />
-  </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -243,6 +215,8 @@
       <workItem from="1698203289834" duration="14737000" />
       <workItem from="1698232615209" duration="8932000" />
       <workItem from="1698291128818" duration="32412000" />
+      <workItem from="1698412299045" duration="1020000" />
+      <workItem from="1698458507209" duration="1206000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.">
       <option name="closed" value="true" />

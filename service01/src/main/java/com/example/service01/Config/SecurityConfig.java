@@ -41,6 +41,6 @@ public class SecurityConfig {
     }
 
     public static final String[] ENDPOINTS_WHITELIST = {
-            "/v3/api-docs/**", "/swagger-ui/**", "/login/**", "/", "/**","/register/**", "/process_register/**", "/verify/**", "/verify_success/**", "/verify_fail/**", "/forgotPassword/**", "/resetPassword/**"
+ "/v3/api-docs/**", "/swagger-ui/**", "/login/**", "/", "/**","/register/**", "/process_register/**", "/verify/**", "/verify_success/**", "/verify_fail/**", "/forgotPassword/**", "/resetPassword/**"
     };
 }
