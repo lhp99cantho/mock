@@ -30,7 +30,7 @@ public class SecurityConfig {
                 .cors(AbstractHttpConfigurer::disable)
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/v3/api-docs/**", "/swagger-ui/**","/login/**","/register/**", "/verify/**","/verify_success/**","/verify_fail/**")
+                        .requestMatchers(ENDPOINTS_WHITELIST)
                         .permitAll() // Cho phép tất cả mọi người truy cập vào những URL này
                         .anyRequest() // Tất cả các request còn lại cần phải xác thực mới được truy cập
                         .authenticated())
@@ -39,4 +39,8 @@ public class SecurityConfig {
                 .userDetailsService(userDetailsService)
                 .build();
     }
+
+    public static final String[] ENDPOINTS_WHITELIST = {
+ "/v3/api-docs/**", "/swagger-ui/**", "/login/**", "/", "/**","/register/**", "/process_register/**", "/verify/**", "/verify_success/**", "/verify_fail/**", "/forgotPassword/**", "/resetPassword/**"
+    };
 }

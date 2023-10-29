@@ -20,7 +20,6 @@ public class LoginController {
     public ResponseEntity<ApiResponse<AuthResponse>> login(@RequestBody LoginRequest request) {
         try {
             AuthResponse authResponse = authService.login(request);
-
             ApiResponse apiResponse = new ApiResponse();
             apiResponse.ok(authResponse);
             return new ResponseEntity<>(apiResponse, HttpStatus.OK);
@@ -29,25 +28,5 @@ public class LoginController {
             throw new ApplicationException();
         }
     }
-
 }
-
-//    @PostMapping("/register")
-//    public ResponseEntity<ApiResponse<AuthResponse>> register(@RequestBody RegisterRequest request, String siteURL) {
-//        try {
-//            AuthResponse authResponse = authService.register(request, siteURL);
-//
-//            if (authResponse != null) {
-//                // Gửi email thông báo đăng ký thành công
-//                User user = userService.findByUsername(request.getUsername());
-//                emailService.sendRegistrationEmail(user.getEmail());
-//            }
-//
-//            ApiResponse apiResponse = new ApiResponse();
-//            apiResponse.ok(authResponse);
-//            return new ResponseEntity<>(apiResponse, HttpStatus.OK);
-//        } catch (Exception ex) {
-//            throw new ApplicationException();
-//        }
-//    }
 

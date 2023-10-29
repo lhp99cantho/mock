@@ -4,35 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ef572f1-ddd4-4d3b-9062-28c6f14e8d6d" name="Changes" comment="draft">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Config/OpenApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Controller/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service/EmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service01/src/main/resources/templates/process_register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service01/src/main/resources/templates/verify_fail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service01/src/main/resources/templates/verify_success.html" afterDir="false" />
+    <list default="true" id="1ef572f1-ddd4-4d3b-9062-28c6f14e8d6d" name="Changes" comment="version 27/10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service01/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Config/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Controller/AuthenticationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Controller/IndexController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Security/UserSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Security/UserSecurity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service/impl/AuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service01Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/Service01Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/model/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/model/Entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/model/request/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/model/request/RegisterRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/java/com/example/service01/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/src/main/resources/private.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service01/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/target/classes/com/example/service01/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service01/target/classes/private.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service01/src/main/resources/templates/reset_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/service01/src/main/resources/templates/reset_password.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,14 +18,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="login" />
+        <entry key="$PROJECT_DIR$" value="login-darft1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -89,6 +67,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -97,9 +76,9 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;login-darft1&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;login&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/03. MR. MFC/05. FSOFT/14. MOCK UP/Nhap Java/mock/service01/src/main/resources/templates&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/03. MR. MFC/05. FSOFT/14. MOCK UP/Nhap Java/mock/service01/src/main/java/com/example/service01&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -110,19 +89,19 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="Push.Settings">
-    <option name="SHOW_DETAILS_PANEL" value="false" />
-  </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\03. MR. MFC\05. FSOFT\14. MOCK UP\Nhap Java\mock\service01\src\main\java\com\example\service01" />
+      <recent name="D:\03. MR. MFC\05. FSOFT\14. MOCK UP\Nhap Java\mock\service01\src\main\resources\templates\style" />
       <recent name="D:\03. MR. MFC\05. FSOFT\14. MOCK UP\Nhap Java\mock\service01\src\main\resources\templates" />
       <recent name="D:\03. MR. MFC\05. FSOFT\14. MOCK UP\Nhap Java\mock\service01\src\main\resources" />
-      <recent name="D:\03. MR. MFC\05. FSOFT\14. MOCK UP\Nhap Java\mock\service01\src\main\java\com\example\service01" />
       <recent name="D:\03. MR. MFC\05. FSOFT\14. MOCK UP\Nhap Java\mock\service01\src\main\java\com\example\service01\model" />
-      <recent name="D:\03. MR. MFC\05. FSOFT\14. MOCK UP\Nhap Java\mock\service01\src\main\java\com\example\service01\model\Entity" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\03. MR. MFC\05. FSOFT\14. MOCK UP\Nhap Java\mock\service01\src\main\resources\templates" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.service01.Controller" />
@@ -230,6 +209,14 @@
       <workItem from="1697800652744" duration="8963000" />
       <workItem from="1697860013287" duration="19022000" />
       <workItem from="1697944629967" duration="917000" />
+      <workItem from="1697946276041" duration="2157000" />
+      <workItem from="1697977136649" duration="1909000" />
+      <workItem from="1698060243849" duration="9272000" />
+      <workItem from="1698203289834" duration="14737000" />
+      <workItem from="1698232615209" duration="8932000" />
+      <workItem from="1698291128818" duration="32412000" />
+      <workItem from="1698412299045" duration="1020000" />
+      <workItem from="1698458507209" duration="1206000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.">
       <option name="closed" value="true" />
@@ -400,12 +387,5 @@
     <MESSAGE value="draft 2" />
     <MESSAGE value="draft" />
     <option name="LAST_COMMIT_MESSAGE" value="draft" />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="SpringBootApplicationConfigurationType">
-        <watch expression="authResponse" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
